@@ -10,39 +10,33 @@ body{
 
 .herosection{
  
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   max-height: 330px;
-   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  min-height: 50vh;
+  padding: 2rem;
 
 }
 
 .imgsection{
    
 
-    padding: 8rem;
+    padding: 2rem;
     padding-top: 20px;
     
 }
 
-.description{
-    
-   /* padding-left:50px;
-    padding-right:50px;
-    */
-    margin-right: 100px;
-    
-    max-height: 60vh;
-    height: fit-content;
-    overflow:hidden ;
-  
-    
+.description {
+  max-width: 500px;  
 }
-.profilephoto{
-    height: 200px;
-    width: auto;
-    border-radius: 30%;
+
+
+.profilephoto {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 30%;
 }
 
 h2{
@@ -56,7 +50,7 @@ h2{
 }
 
 .projects{
-    background-color:#393E46;
+   
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -112,7 +106,7 @@ h2{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     
 .herosection {
@@ -160,7 +154,7 @@ h2{
     }
 
 h2 {
-        font-size: 1.2rem;
+        font-size: 2 rem;
     }
 
 p {
