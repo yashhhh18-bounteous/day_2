@@ -1,11 +1,49 @@
-p{
-color: rgb(255, 255, 255);
-font-size: larger;
+
+
+
+
+
+:root{
+    --text-primary:#111827;
+    --bg-primary:#ffffff;
+    --bg-nav:#ffffff;
+    --bg-box:#ffffff;
+
+}
+
+.dark{
+    --text-primary:#ffffff;
+    --bg-primary:#111827;
+    --bg-nav:#111827;
+    --bg-box:#111827;
+}
+
+.nav-bg{
+    background-color: var(--bg-nav);
+  
+    transition: background-color 0.3 ease,color 0.3 ease;
 }
 
 
+.nav-box{
+    background-color: var(--bg-box);
+
+    transition: background-color 0.3 ease,color 0.3 ease;
+}
+
+
+
+.li{
+    color:inherit
+}
+
+
+
 body{
-    background-color: black;
+    color: var(--text-primary);
+    background-color:var(--bg-primary);
+    transition: background-color 0.3 ease, color 0.3 ease;
+
 }
 
 .herosection{
@@ -39,10 +77,7 @@ body{
   border-radius: 30%;
 }
 
-h2{
-    color: white;
 
-}
 
 
 #mainname{
@@ -60,7 +95,11 @@ h2{
 }
 
 .pr{
-    background-color: #222831;
+
+    
+      background-color: var(--bg-box);
+    transition: background-color 0.3 ease,color 0.3 ease;
+
     padding: 5px;
     margin: 20px;
     height: fit-content;
